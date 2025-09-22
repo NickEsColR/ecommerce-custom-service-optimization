@@ -1,0 +1,53 @@
+Respuesta del prompt básico:
+    El estado del pedido **PED001** es **en proceso**.
+
+Respuesta del prompt mejorado:
+    Hola, el estado actual de tu pedido con el número de seguimiento PED001 es "en proceso". Esto significa que estamos preparando tu pedido para su envío. Generalmente, los pedidos en proceso tardan entre 1 y 3 días hábiles en ser embalados. Te notificaremos una vez que tu pedido haya sido embalado y esté en camino. ¡Gracias por tu paciencia!
+
+Respuesta del prompt mejorado con pedido en envío:
+    El estado del pedido PED003 es "en tránsito". El tiempo de entrega estimado puede variar, pero generalmente los pedidos en tránsito llegan en un plazo de 2 a 5 días hábiles. Lamentablemente, no tengo un enlace de rastreo para proporcionarte en este momento. Si tienes más preguntas o necesitas ayuda adicional, estaré encantado de asistirte.
+
+Respuesta de devolución de producto no elegible:
+    Lamento mucho escuchar que el producto que recibió no es adecuado para usted debido a su alergia. Dado que se trata de un producto perecedero, no es elegible para devolución según nuestra política. Sin embargo, entiendo la gravedad de su situación y me gustaría ayudarle de la mejor manera posible.
+
+    Por favor, no consuma las galletas y deséchelas de manera segura. Luego, contácteme nuevamente para que podamos discutir posibles opciones, como un reembolso parcial o un crédito en su cuenta para futuras compras.
+
+    Para evitar este tipo de situaciones en el futuro, le recomiendo que revise cuidadosamente la descripción del producto y los ingredientes antes de realizar una compra. También puede contactarnos antes de realizar un pedido si tiene alguna pregunta sobre los ingredientes o alérgenos.
+
+    Lamento cualquier inconveniente que esto pueda haber causado y espero que podamos encontrar una solución satisfactoria para usted.
+
+Respuesta de devolución de producto elegible:
+    Lo siento mucho por el inconveniente. Para poder ayudarte mejor, necesitaré algunos detalles adicionales:
+
+    1. ¿Cuándo recibiste el carro de juguete?
+    2. ¿El carro de juguete estaba en oferta o es un artículo personalizado?
+    3. ¿Podrías describir el daño que presenta el carro de juguete?
+
+    Con esta información, podré verificar si el producto es elegible para devolución y proporcionarte las instrucciones necesarias.
+    Respuesta de devolución de productos:
+    Entiendo que deseas devolver varios productos de tu pedido. Vamos a revisar la elegibilidad de cada uno según nuestra política de devoluciones:
+
+    1. **Crema dental**: Los productos de higiene no son elegibles para devolución.
+    2. **Cepillo de dientes**: Los artículos de higiene no son elegibles para devolución.
+    3. **Camisas**: Si están en su estado original y sin usar, son elegibles para devolución.
+    4. **Frijol**: Los productos perecederos no son elegibles para devolución.
+    5. **Detergente**: Si está en su estado original y sin usar, es elegible para devolución.
+    6. **Leche**: Los productos perecederos no son elegibles para devolución.
+
+    ### Instrucciones para la devolución de los artículos elegibles (camisas y detergente):
+
+    1. **Empaque**: Asegúrate de que los artículos estén en su empaque original y en buen estado.
+    2. **Formulario de devolución**: Completa el formulario de devolución que se encuentra en nuestra página web.
+    3. **Envío**: Envía los artículos a la siguiente dirección:
+    ```
+    Centro de Devoluciones
+    Calle Principal #123
+    Ciudad, Estado, Código Postal
+    ```
+    4. **Seguimiento**: Una vez que recibamos los artículos, procesaremos tu reembolso dentro de los 5-7 días hábiles.
+
+    ### Artículos no elegibles para devolución:
+    - **Crema dental y cepillo de dientes**: No son elegibles para devolución debido a que son artículos de higiene.
+    - **Frijol y leche**: No son elegibles para devolución debido a que son productos perecederos.
+
+    Si tienes alguna otra pregunta o necesitas más ayuda, no dudes en decírmelo. Estoy aquí para ayudarte.

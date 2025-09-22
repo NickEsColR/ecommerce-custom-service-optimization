@@ -1,0 +1,12 @@
+PED001,en proceso
+PED002,embalando
+PED003,en transito
+PED004,entregado
+PED005,en proceso
+PED006,embalando
+PED007,en transito
+PED008,entregado
+PED009,en proceso
+PED010,embalando
+PED011,en transito
+PED012,entregado
