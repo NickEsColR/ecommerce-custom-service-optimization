@@ -36,6 +36,8 @@ El cerebro de nuestro asistente es un flujo RAG. Esto asegura que el modelo resp
 
 - ℹ️ **Información del producto:** De la misma forma que las preguntas relacionadas a la operación del negocio, la información de los productos también deben hacer parte del espacio de búsqueda. De esta forma cualquier duda con respecto al producto en el que el cliente esta interesado se responderia rápidamente, asegurando en mayor medida una compra potencial.
 
+- 📦 **Estado del pedido:** Se puede actualizar frecuentemente una base de datos con el estado de los pedidos, estos serían obtenidos en la recuperación para preguntas relacionadas. Sin embargo, pueden no estar completamente actualizados en todo momento, esto puede requierir un gran esfuerzo adicional, en especial si algún detalle en especifico se obtiene por un tercero (como la ubicación exacta si el envío lo realizza una empresa especializada)
+
 ## 📈 4. Escalabilidad
 
 Al ser un servicio gestionado por Google, la infraestructura subyacente está diseñada para escalar automáticamente a niveles de demanda masivos. Las únicas limitaciones son los límites de tasa de la API (rate limits), que pueden ser aumentados según el plan contratado con el proveedor. La latencia se mantiene consistentemente baja incluso a gran escala. También es posible ampliar en un futuro el acceso a información de tiempo real del estado de un pedido por medio de *MCP*.
