@@ -1,12 +1,12 @@
 PED001,en proceso
-PED002,embalando
-PED003,en transito
+PED002,embalando,retrasado
+PED003,en transito,https://seguimiento.envios.com/track/TR003-ABC123
 PED004,entregado
-PED005,en proceso
+PED005,en proceso,retrasado
 PED006,embalando
-PED007,en transito
+PED007,en transito,https://seguimiento.envios.com/track/TR007-DEF456
 PED008,entregado
 PED009,en proceso
-PED010,embalando
-PED011,en transito
+PED010,embalando,retrasado
+PED011,en transito,https://seguimiento.envios.com/track/TR011-GHI789
 PED012,entregado
