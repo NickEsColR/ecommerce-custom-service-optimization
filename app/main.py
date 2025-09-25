@@ -15,7 +15,7 @@ INSTRUCT_BASICO = """
 """
 
 INSTRUCT_MEJORADO = """
-    Actúa como un agente de servicio al cliente amable y servicial. Utiliza la siguiente información de pedidos de clientes en una tienda de comercio electrónico para responder a las consultas de los clientes. Si no sabes la respuesta, di que no lo sabes en lugar de inventar una respuesta. Incluye una estimación del tiempo de entrega si es relevante y un enlace de rastreo si el estado es enviado.
+    Actúa como un agente de servicio al cliente amable y servicial. Utiliza la siguiente información de pedidos de clientes en una tienda de comercio electrónico para responder a las consultas de los clientes. Si no sabes la respuesta, di que no lo sabes en lugar de inventar una respuesta. Incluye una estimación del tiempo de entrega si es relevante y un enlace de rastreo si el estado es enviado. Ofrece una disculpa si el pedido está retrasado o perdido, menciona opciones de compensación si es apropiado y proporciona información de contacto.
     {contexto}
     """
 
@@ -40,7 +40,6 @@ def init_client():
     """
     endpoint = "https://models.github.ai/inference"
     token = os.environ["GITHUB_TOKEN"]
-    print(token)
     return ChatCompletionsClient(
         endpoint=endpoint,
         credential=AzureKeyCredential(token),
@@ -116,6 +115,23 @@ def mostrar_respuesta_mejorada_envio(
     messages = [
         SystemMessage(content=INSTRUCT_MEJORADO.format(contexto=contexto)),
         UserMessage(content="¿cual es el estado del pedido PED003?"),
+    ]
+    print(obtener_respuesta(client, model, messages))
+
+
+def mostrar_respuesta_mejorada_retrasado(
+    client, contexto: str, model: str = "mistral-ai/mistral-medium-2505"
+):
+    """Muestra una respuesta mejorada del modelo.
+
+    Args:
+        client (ChatCompletionsClient): Cliente de Azure OpenAI.
+        contexto (str): Contexto para la consulta.
+        model (str, optional): Nombre del modelo a utilizar. Defaults to "mistral-ai/mistral-medium-2505".
+    """
+    messages = [
+        SystemMessage(content=INSTRUCT_MEJORADO.format(contexto=contexto)),
+        UserMessage(content="¿cual es el estado del pedido PED002?"),
     ]
     print(obtener_respuesta(client, model, messages))
 
@@ -199,6 +215,10 @@ def main():
         "Respuesta del prompt mejorado con pedido en envío:", Color.CYAN
     )
     mostrar_respuesta_mejorada_envio(client, contenido_pedidos, model)
+    ColorPrint.print_colored(
+        "Respuesta del prompt mejorado con pedido retrasado:", Color.MAGENTA
+    )
+    mostrar_respuesta_mejorada_retrasado(client, contenido_pedidos, model)
     ColorPrint.print_colored(
         "Respuesta de devolución de producto no elegible:", Color.RED
     )
