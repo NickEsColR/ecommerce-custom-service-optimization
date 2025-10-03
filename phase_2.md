@@ -20,12 +20,14 @@ Almacena:
 
 - Información detallada de productos
 - Inventario de productos
+- Estado de pedidos
 
 ### 1.3 Archivos JSON
 
 Incluyen:
 
 - Preguntas frecuentes (FAQ)
+- Estado de pedidos
 - Conversaciones anteriores
 
 ### 1.4 Base de Datos NoSQL
