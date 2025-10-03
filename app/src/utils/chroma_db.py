@@ -9,6 +9,15 @@ PATH = "chroma_db"
 
 
 def save_to_chroma(chunks: list[Document], embedding_model) -> Chroma:
+    """Saves document chunks to a Chroma vector store.
+
+    Args:
+        chunks (list[Document]): The document chunks to save.
+        embedding_model (_type_): The embedding model to use for the chunks.
+
+    Returns:
+        Chroma: The Chroma vector store instance.
+    """
     if os.path.exists(PATH):
         try:
             shutil.rmtree(PATH)
