@@ -4,6 +4,15 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 
 def chunks_pdf(directory_path: str) -> list[Document]:
+    """
+    Splits PDF documents into chunks.
+
+    Args:
+        directory_path (str): The path to the directory containing PDF documents.
+
+    Returns:
+        list[Document]: A list of Document objects representing the chunks.
+    """
     document_loader = PyPDFDirectoryLoader(directory_path)
     documents = document_loader.load()
 
